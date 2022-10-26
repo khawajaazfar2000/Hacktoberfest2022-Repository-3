@@ -5,13 +5,15 @@ int main()
     int rows;
     cout << "Enter number of rows: ";
     cin >> rows;
-    for(int i = 1; i <= rows; ++i)
-    {
-        for(int j = 1; j <= i; ++j)
-        {
-            cout << "* ";
-        }
-        cout << "\n";
+   int i=1;
+   while(i<=rows){
+    int j=1;
+    while(j<=i){
+        cout<<"* ";
+        j++;
     }
+    cout<<endl;
+    i++;
+   }
     return 0;
 }
